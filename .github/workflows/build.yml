@@ -7,8 +7,6 @@ on:
       - dev
 
 jobs:
-  sonarqube:
-    name: Sonarscan
     uses: Practice-org04651/sonar-main/.github/workflows/sonarqube-build.yml@dev
     secrets:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
