@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
         with:
          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-   sonar-analysis:
-      uses: Practice-org04651/sonar-main/.github/workflows/sonarqube-build.yml@Dev
-      secrets:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      - name: sonar-analysis
+        uses: Practice-org04651/sonar-main/.github/workflows/sonarqube-build.yml@Dev
+        env:
+           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
