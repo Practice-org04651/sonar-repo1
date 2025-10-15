@@ -5,12 +5,13 @@ on:
     branches:
       - master
       - dev
+      - QA
 
 jobs:
    build:
      name: Build and analyze with shared workflow
-     uses: Practice-org04651/sonar-main/.github/workflows/sonarqube-build.yml@Dev
+     uses: Practice-org04651/sonar-main/.github
      secrets:
        SONAR_TOKEN: ${{ secrets.MSQToken }}
-       SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+       SONAR_HOST_URL: ${{ secrets.SONAR_HO
        SONAR_ROOT_CERT: ${{ secrets.SONAR_ROOT_CERT }}
