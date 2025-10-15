@@ -10,5 +10,3 @@ jobs:
   sonarqube:
     name: Sonarscan
     uses: path/commonfile
-    secrets:
-      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
