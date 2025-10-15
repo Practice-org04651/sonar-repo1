@@ -9,4 +9,4 @@ on:
 jobs:
   sonarqube:
     name: Sonarscan
-    uses: path/commonfile
+    uses: Practice-org04651/sonar-main/.github/workflows/sonarqube-build.yml@Dev
